@@ -1,0 +1,99 @@
+.bod {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.all-content {
+    margin: 0 auto;
+}
+
+.assyl {
+    color: #16a085;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+.ssylky {
+    font-family: AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: ﻿Roboto-Black; /* Имя шрифта */
+    src: url(../fonts/3953.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: GothamRounded-Bold; /* Имя шрифта */
+    src: url(../fonts/GothamRounded-Bold.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: ﻿MyriadPro-Regular; /* Имя шрифта */
+    src: url(../fonts/8143.otf); /* Путь к файлу со шрифтом */
+}
+
+.image {
+    height: 790px;
+    width: 1280px;
+}
+
+.hed1 {
+    color: #373737;
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
+    font-size: 22px;
+    padding-top: 56px;
+
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    color: #373737;
+    background-color: #f5f6f7;
+    margin-bottom: 41px;
+}
+
+.main {
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 41px;
+
+}
+
+.p-bot-main {
+    padding-bottom: 41px;
+}
+
+.click {
+    background: #16a085;
+    color: #ffffff;
+    font-family: ﻿GothamRounded-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    padding: 18px 43px;
+    margin-bottom: 94px;
+
+}
+
+
+.foot {
+    color: #373737;
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 104px;
+    padding-bottom: 45px;
+    /*margin-top: 47px;*/
+    /*margin-bottom: 45px;*/
+    /*margin-left: 768px;*/
+}
