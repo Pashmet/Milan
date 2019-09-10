@@ -49,7 +49,7 @@
     display: inline-block;
     border: 1px solid gray;
     width: 30%;
-    margin-right:2.5%;
+    margin-right: 2.5%;
     vertical-align: top;
 
 }
@@ -83,7 +83,6 @@
 
 .picture {
     display: inline-block;
-
     border: 1px solid gray;
 }
 
@@ -99,21 +98,22 @@
     transform: scale(1.2);
 }
 
-.pic-text{
+.pic-text {
     display: inline-block;
     width: 64.6%;
 }
 
-.fulltext{
+.fulltext {
     text-align: left;
     padding: 50px 5%;
     color: rgba(44, 44, 44, 255);
     font-size: 18px;
 }
 
-.text1{
+.text1 {
     padding-bottom: 30px;
 }
+
 .foternav {
     display: inline-block;
     width: 100%;
@@ -124,7 +124,10 @@
     /*padding-right: auto;*/
 }
 
-.f-ul{display: inline-block}
+.f-ul {
+    display: inline-block
+}
+
 .fnav {
     display: inline-block;
     padding-top: 22px;
@@ -138,15 +141,17 @@
     color: rgba(12, 25, 39, 255);
     text-decoration: none;
 }
-.afnav:hover{
+
+.afnav:hover {
     text-decoration: underline;
     color: #3181a6;
 }
 
-.fcopir{
+.fcopir {
     text-align: right;
     padding-left: 218px;
 }
+
 /*.fu-l {*/
 /*    padding-left: 41px;*/
 /*}*/
