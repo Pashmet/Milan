@@ -1,25 +1,21 @@
-.bod {
+.container {
+    margin: 0 auto;
     width: 1280px;
-    margin: 0 auto;
 }
 
-.all-content {
-    margin: 0 auto;
-}
-
-.assyl {
-    color: #16a085;
-    text-decoration: none;
-    margin: 0 35px;
-}
-
-.ssylky {
+.navigation {
     font-family: AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     margin-top: 32px;
     margin-bottom: 35px;
     text-align: center;
+}
+
+.navigation_a-item {
+    color: #16a085;
+    text-decoration: none;
+    margin: 0 35px;
 }
 
 @font-face {
@@ -50,7 +46,7 @@
 
 }
 
-.text {
+.main {
     width: 100%;
     text-align: center;
     color: #373737;
@@ -58,7 +54,7 @@
     margin-bottom: 41px;
 }
 
-.main {
+.p_text {
     font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
     font-size: 16px;
     padding-left: 5%;
@@ -67,11 +63,11 @@
 
 }
 
-.p-bot-main {
+.p-text-2 {
     padding-bottom: 41px;
 }
 
-.click {
+.bottom {
     background: #16a085;
     color: #ffffff;
     font-family: ﻿GothamRounded-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, sans-serif;
@@ -86,7 +82,7 @@
 }
 
 
-.foot {
+.footer {
     color: #373737;
     font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier, sans-serif;
     font-size: 16px;
