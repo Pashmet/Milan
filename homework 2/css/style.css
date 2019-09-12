@@ -5,19 +5,18 @@
 
 }
 
-.piceword {
+.label_piceword {
     color: #000000
 }
 
-.all {
-    margin: 0 auto;
+.container {
     font-family: sans-serif;
     margin-top: 61px;
     margin-bottom: 51px;
     width: 1280px;
 }
 
-.top_menu {
+.top_navigation {
     display: inline-block;
     width: 100%;
     background: #35444f;
@@ -27,20 +26,20 @@
 
 }
 
-.topnav {
+.top_navigation_item {
     display: inline-block;
     font-size: 24px;
     vertical-align: middle;
     padding: 21px;
 }
 
-.topnav:hover {
+.top_navigation_item:hover {
     background: #222f3a;
     border-left: 1px solid #818181;
     border-right: 1px solid #818181;
 }
 
-.atopnav {
+.top_navigation_ssylka {
     color: #ffffff;
     text-decoration: none;
 }
@@ -54,7 +53,7 @@
 
 }
 
-.navl {
+.navigation-left-item {
     /*display: inline-block;*/
     padding-top: 28px;
     padding-bottom: 28px;
@@ -62,31 +61,31 @@
 
 }
 
-.anavl {
+.navigation-left-ssylka {
     color: red;
     text-decoration: none;
     color: rgba(73, 88, 99, 255);
     font-size: 30px;
 }
 
-.navl:hover {
+.navigation-left-item:hover {
     padding-left: 69px;
     background: #dbdbdb;
     /*border-right:1px solid gray;*/
     /*border-left:1px solid gray;*/
 }
 
-.anavl:hover {
+.navigation-left-ssylka:hover {
     color: black;;
 
 }
 
-.picture {
+.main-picture-conteiner {
     display: inline-block;
     border: 1px solid gray;
 }
 
-.ramp {
+.main-img {
     width: 320px;
     height: 381px;
     padding: 75px 268px;
@@ -94,41 +93,38 @@
     transform: scale(1);
 }
 
-.ramp:hover {
+.main-img:hover {
     transform: scale(1.2);
 }
 
-.pic-text {
+.main {
     display: inline-block;
     width: 64.6%;
 }
 
-.fulltext {
+.main-text {
     text-align: left;
     padding: 50px 5%;
     color: rgba(44, 44, 44, 255);
     font-size: 18px;
 }
 
-.text1 {
+.main-text1 {
     padding-bottom: 30px;
 }
 
-.foternav {
+.footer-navigation {
     display: inline-block;
     width: 100%;
     background: #b4b7ba;
     text-align: center;
-    padding-left: 44px;
-    /*padding-left: auto;*/
-    /*padding-right: auto;*/
 }
 
-.f-ul {
+.footer-navigation__list {
     display: inline-block
 }
 
-.fnav {
+.footer-navigation__item {
     display: inline-block;
     padding-top: 22px;
     padding-bottom: 22px;
@@ -136,20 +132,20 @@
 
 }
 
-.afnav {
+.footer-navigation__ssylka {
     font-size: 28px;
     color: rgba(12, 25, 39, 255);
     text-decoration: none;
 }
 
-.afnav:hover {
+.footer-navigation__ssylka:hover {
     text-decoration: underline;
     color: #3181a6;
 }
 
-.fcopir {
+.footer-navigation__copiright {
     text-align: right;
-    padding-left: 218px;
+    padding-left: 180px;
 }
 
 /*.fu-l {*/
