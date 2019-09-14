@@ -11,9 +11,11 @@
 
 .container {
     font-family: sans-serif;
-    margin-top: 61px;
-    margin-bottom: 51px;
+    margin: 61px auto 51px auto ;
+
     width: 1280px;
+
+ 
 }
 
 .top_navigation {
@@ -47,9 +49,10 @@
 .navigation-left {
     display: inline-block;
     border: 1px solid gray;
-    width: 30%;
-    margin-right: 2.5%;
+    width: 344px;
+    margin-right:51px;
     vertical-align: top;
+    box-sizing: border-box;
 
 }
 
@@ -82,7 +85,10 @@
 
 .main-picture-conteiner {
     display: inline-block;
+    box-sizing: border-box;
     border: 1px solid gray;
+    width: 100%;
+
 }
 
 .main-img {
@@ -99,7 +105,8 @@
 
 .main {
     display: inline-block;
-    width: 64.6%;
+    width: 885px;
+    box-sizing: border-box;
 }
 
 .main-text {
