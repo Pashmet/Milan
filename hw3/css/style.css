@@ -105,12 +105,13 @@
     border-image: linear-gradient(to bottom, #fdfdfd 0%, #010101 100%) 1;
     background-repeat: no-repeat;
     background-size: cover;
+    /*margin-bottom: 20px;*/
 }
 
 .main-item-label {
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 55px;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 55px;*/
     display: block;
     text-decoration: none;
     color: rgba(225, 255, 255, 255);
@@ -138,6 +139,7 @@
     color: rgba(255, 255, 255, 255);
     float: left;
     margin-right: 65px;
+    margin-bottom: 55px;
 }
 
 .main-item-a:hover .text-show {
@@ -186,6 +188,7 @@
     opacity: 0;
     box-sizing: border-box;
     margin-top: -63px;
+    margin-bottom: 20px;
 }
 
 .text-show-from {
