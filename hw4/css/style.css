@@ -2,16 +2,25 @@ html, body {
     height: 100%;
     font-family: sans-serif;
 }
-*:hover{
+
+*:hover {
     transition: all 0.5s;
 }
-.a{
+
+.a {
     font-size: 14px;
     text-decoration: none;
     color: rgba(60, 184, 120, 255)
 }
-.a:hover{
+
+.a:hover {
     text-decoration: underline;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .container {
@@ -27,41 +36,49 @@ html, body {
     height: 56px;
     background: rgba(0, 0, 0, .5);
     position: relative;
+    line-height: 56px;
     /*width: 100%;*/
     /*display: block;*/
 }
 
 .header-label {
     font-family: ﻿Verdana-Bold, ﻿AdobeInvisFont, ﻿Courier, sans-serif;
-    font-size: 20pt;
+    font-size: 20px;
     font-weight: bold;
     color: rgba(255, 255, 255, 255);
     /*text-align: left;*/
-    position: absolute;
-    top: 50%;
-    left: 81px;
-    /*float: left;*/
-    transform: translate(0, -50%);
-    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 81px;*/
+    float: left;
+    /*transform: translate(0, -50%);*/
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 81px;
 }
 
-.header-label:hover{
+.header-label:hover {
     color: #3cb878;
+
 }
+
 .header-icon {
     display: inline-block;
     /*position: absolute;*/
+    /*display: inline;*/
     height: 28px;
     width: 28px;
     /*top: 50%;*/
     /*transform: translate(-50%, -50%);*/
     background: url("../img/css_sprites.png") no-repeat;
     /*float: right;*/
+    /*margin-top: 18px;*/
 }
 
 .header-icon1 {
     background-position: 94% 87%;
 }
+
 .header-icon1:hover {
     background-position: 94% 13%;
 }
@@ -73,7 +90,7 @@ html, body {
     margin-right: 28px;
 }
 
-.header-icon2:hover{
+.header-icon2:hover {
     background-position: 55% 12%;
 }
 
@@ -81,9 +98,10 @@ html, body {
     background-position: 7% 88%;
 }
 
-.header-icon3:hover{
-    background-position:  45% 88%;
+.header-icon3:hover {
+    background-position: 45% 88%;
 }
+
 .header-welcome:before {
     content: '';
     display: inline-block;
@@ -137,13 +155,15 @@ html, body {
 
 
 .icons-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*right: 0;*/
     margin-right: 75px;
+    float: right;
     /*height: 100%;*/
-    /*display: inline-block;*/
+    display: inline-block;
+    /*vertical-align: middle;*/
 
 }
 
@@ -154,6 +174,10 @@ html, body {
     margin-right: 25px;
     display: inline-block;
     vertical-align: middle;
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    line-height: 90%;
+    /*font-size: 50%;*/
 
     /*left: 921px;*/
     /*height: 100%;*/
@@ -221,6 +245,7 @@ html, body {
     right: 0;
     bottom: 0;
 }
+
 /*.btn-wrapper{*/
 /*    position: relative;*/
 /*    display: inline-block;*/
@@ -239,7 +264,7 @@ html, body {
 
 }
 
-.btn-google:before{
+.btn-google:before {
     /*content: url("../img/G+@1X.png");*/
     /*display: inline-block;*/
     /*!*width: 47px;*!*/
@@ -258,7 +283,8 @@ html, body {
     /*left: 0;*/
     /*top: 1px;*/
 }
-.text-btn{
+
+.text-btn {
     /*position: absolute;*/
     width: 109px;
     display: inline-block;
@@ -267,9 +293,10 @@ html, body {
     /*vertical-align: middle;*/
     /*position: relative;*/
 }
+
 .btn-facebook, .btn-google {
     /*padding: 13px;*/
-    padding:  9px 0 9px 0;
+    padding: 9px 0 9px 0;
     width: calc(50% - 4px);
     display: inline-block;
     text-align: center;
@@ -299,12 +326,13 @@ html, body {
 /*}*/
 
 .btn {
-      border-radius: 3px;
-      font-size: 16px;
-      border: none;
-      color: #ffffff;
-  }
-.btn:hover{
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+    color: #ffffff;
+}
+
+.btn:hover {
     filter: brightness(90%);
 }
 
@@ -336,9 +364,10 @@ html, body {
     left: 0;
     top: 8px;
 }
+
 .or:after {
     display: inline-block;
-    background:  #eaeaea;
+    background: #eaeaea;
     content: "";
     width: 135px;
     height: 1px;
@@ -353,23 +382,24 @@ html, body {
 }
 
 .input {
-    width: 322px;
+    width: 100%;
     /*height: 46px;*/
     padding: 17px;
     margin: 0 auto 9px;
     display: block;
     font-size: 14px;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     /*border-color: #eaeaea;*/
-    border: 1px solid  #eaeaea;
+    border: 1px solid #eaeaea;
     border-radius: 3px;
     /*color: #bebebe;*/
 }
-.input::placeholder{
+
+.input::placeholder {
     color: #bebebe;
 }
 
-.input:last-of-type{
+.input:last-of-type {
     margin-bottom: 22px;
 }
 
@@ -382,22 +412,23 @@ html, body {
     /*font-size: 14px;*/
     /*box-sizing: border-box;*/
     /*!*border-color: #eaeaea;*!*/
-    border: 1px solid  #eaeaea;
+    border: 1px solid #eaeaea;
     color: #434343;
     outline: none;
-    box-shadow: 0 2px 8px  rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
 }
 
-.icon-f{
+.icon-f {
     left: 20px;
     padding-right: 17px;
 
 }
 
-.icon-g{
+.icon-g {
     left: 13px;
     padding-right: 9px;
 }
+
 .fab {
     /*width: 47px;*/
     display: inline-block;
@@ -409,36 +440,38 @@ html, body {
     line-height: 28px;
     /*padding-right: 9px;*/
 }
+
 .container-ch {
     font-size: 14px;
     display: block;
     position: relative;
     padding-left: 35px;
     line-height: 20px;
- }
-.checkbox:checked ~ .checkmark:after{
+}
+
+.checkbox:checked ~ .checkmark:after {
     display: block;
 }
 
-.checkbox{
+.checkbox {
     position: absolute;
     opacity: 0;
     height: 0;
     width: 0;
 }
-.checkmark{
+
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid  #eaeaea;
+    border: 1px solid #eaeaea;
     border-radius: 3px;
 }
 
 
-
-.checkmark:after{
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -450,7 +483,8 @@ html, body {
     border: solid #3cb878;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-    }
+}
+
 /*.form-a {*/
 /*    !*color: #49bd81;*!*/
 /*    !*font-family: sans-serif;*!*/
