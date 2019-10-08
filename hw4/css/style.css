@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
     font-family: sans-serif;
 }
 
@@ -39,6 +40,7 @@ html, body {
     line-height: 56px;
     /*width: 100%;*/
     /*display: block;*/
+    text-align: right;
 }
 
 .header-label {
@@ -160,7 +162,7 @@ html, body {
     /*transform: translateY(-50%);*/
     /*right: 0;*/
     margin-right: 75px;
-    float: right;
+    /*float: right;*/
     /*height: 100%;*/
     display: inline-block;
     /*vertical-align: middle;*/
@@ -185,7 +187,8 @@ html, body {
 
 .main {
     position: relative;
-    height: 100%;
+    height: calc(100% - 56px);
+    width: 100%;
 }
 
 .form {
@@ -193,18 +196,21 @@ html, body {
     /*height: 584px;*/
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translate(0, -50%);
     /*border: 1px solid black;*/
     font-size: 14px;
     background: #ffffff;
     border-radius: 10px;
     overflow: auto;
+    /*padding: 29px auto 32px;*/
 }
 
 .form-section {
     width: 322px;
-    /*height: 100%;*/
+    height: 100%;
     margin: 29px auto 32px;
     position: relative;
     box-sizing: border-box;
@@ -384,7 +390,7 @@ html, body {
 .input {
     width: 100%;
     /*height: 46px;*/
-    padding: 17px;
+    padding: 14px 17px;
     margin: 0 auto 9px;
     display: block;
     font-size: 14px;
@@ -498,7 +504,7 @@ html, body {
     /*transform: translate(0,-50%);*/
     width: 322px;
     /*height: 46px;*/
-    padding: 17px;
+    padding: 14px;
     display: block;
     margin-top: 28px;
     /*margin: 0 auto;*/
