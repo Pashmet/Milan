@@ -6,17 +6,12 @@ function calc(num1, num2, operator) {
     switch (operator) {
         case "+":
             return num1 + +num2;
-           break;
         case "-":
             return num1 - num2;
-            break;
         case "*":
             return num1 * num2;
-            break;
         case "/":
             return num1 / num2;
-            break;
-
     }
 }
 
@@ -33,7 +28,7 @@ do {
 }
 
 while (isNaN(num1) || isNaN(num2) ||
-(operator !== "+"&& operator !== "-" && operator !== "/" && operator !== "*"));
+(operator !== "+" && operator !== "-" && operator !== "/" && operator !== "*"));
 
 
 console.log(calc(num1, num2, operator));
