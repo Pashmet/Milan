@@ -11,6 +11,7 @@ function createNewUser() {
                 writable: true,
             });
             this.lastName = newLastName;
+
             Object.defineProperty(newUser, "lastName", {
                 writable: false,
             });
