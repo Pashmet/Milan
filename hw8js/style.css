@@ -1,0 +1,27 @@
+.labelPrice{
+display: block;
+}
+
+.close{
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    text-align: center;
+    background: gray;
+}
+.close:hover{
+    cursor: pointer;
+}
+
+.spanWithPrice{
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin: 10px;
+    display: inline-block;
+
+}
+

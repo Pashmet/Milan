@@ -16,4 +16,4 @@ function createList(array){
 // let item= document.createElement('li');
 // list.append(item);
 // list.prepend(item);
-// list.append(item);
+// list.append(item);147грн
