@@ -1,6 +1,6 @@
 let input = document.querySelector('.inputPrice');
 
-input.addEventListener('blur', changeStyleBlur);
+// input.addEventListener('blur', changeStyleBlur);
 input.addEventListener('blur', addSpanWithPrice);
 input.addEventListener('focus', changeStyleFocus);
 
@@ -15,7 +15,7 @@ input.addEventListener('focus', changeStyleFocus);
 
 function changeStyleBlur() {
 // let value = +this.value;
-    console.log(this.value);
+//     console.log(this.value);
     if (this.value < 0 || isNaN(this.value)) {
         this.style.borderColor = 'rgba(203, 32, 37, 0.89)';
     } else {
@@ -40,7 +40,7 @@ function changeStyleFocus() {
 function addSpanWithPrice() {
 
     let thiss = this;
-
+    changeStyleBlur();
     if (this.value < 0 || isNaN(this.value)) {
 
         let spanWithError = document.createElement('span');
