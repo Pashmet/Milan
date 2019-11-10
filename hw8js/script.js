@@ -41,6 +41,8 @@ function addSpanWithPrice() {
     }
 }
 
+
+
 function changeStyleBlur(target) {
     console.log(target.value);
     if (target.value < 0 || isNaN(target.value)) {
