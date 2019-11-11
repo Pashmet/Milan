@@ -34,12 +34,10 @@ function createIDFromNameOfTitle(target) {
 }
 
 function deleteClass(target) {
-    if (target.classList.contains('tabs-title')) {
-        let AllTab = target.parentElement.children;
-        for (let i = 0; i < AllTab.length; i++) {
-            if (AllTab[i].classList.contains('active')) {
-                AllTab[i].classList.remove('active')
-            }
+    let AllTab = target.parentElement.children;
+    for (let i = 0; i < AllTab.length; i++) {
+        if (AllTab[i].classList.contains('active')) {
+            AllTab[i].classList.remove('active')
         }
     }
 }
@@ -50,9 +48,9 @@ function deleteDescription(target) {
     const descriptions = descriptionList.children;
     let length = descriptions.length;
     for (let i = 0; i < length; i++) {
-        descriptions[i].style.display = '';
-        if (!descriptions[i].classList.contains(targetID)) {
-            descriptions[i].style.display = 'none';
+        descriptions[i].classList.add('hidden');
+        if (descriptions[i].classList.contains(targetID)) {
+            descriptions[i].classList.remove('hidden');
         }
     }
 }
