@@ -14,18 +14,21 @@ function changeStyleFocus() {
 
 }
 
-function addSpanWithPrice() {
-    let thiss = this;
-    changeStyleBlur(thiss);
+function addSpanWithPrice(ev) {
+    // let thiss = this;
+    // console.log('1', this);
+
+    changeStyleBlur(this);
+    // console.log('xz', ev.target);
     if (this.value < 0 || isNaN(this.value)) {
         let spanWithError = document.createElement('span');
         spanWithError.innerHTML = `Please enter correct price`;
-        thiss.parentElement.after(spanWithError);
+        this.parentElement.after(spanWithError);
     } else {
         let spanWithPrice = document.createElement('span');
-        spanWithPrice.innerHTML = `Current price ${thiss.value}`;
+        spanWithPrice.innerHTML = `Current price ${this.value}`;
         spanWithPrice.classList.add('spanWithPrice');
-        thiss.parentElement.before(spanWithPrice);
+        this.parentElement.before(spanWithPrice);
         let closeSpan = document.createElement('span');
         closeSpan.innerHTML = 'x';
         closeSpan.classList.add('close');
@@ -35,7 +38,11 @@ function addSpanWithPrice() {
 
         function removeSpan() {
             spanWithPrice.remove();
-            thiss.value = '';
+            ev.target.value = '';
+            // ev.bind(this).value = '';
+            // console.log('1', this);
+            // console.log('2', ev.bind(this));
+
             closeSpan.removeEventListener("click", removeSpan);
         }
     }
@@ -44,7 +51,6 @@ function addSpanWithPrice() {
 
 
 function changeStyleBlur(target) {
-    console.log(target.value);
     if (target.value < 0 || isNaN(target.value)) {
         target.style.borderColor = 'rgba(203, 32, 37, 0.89)';
     } else {
