@@ -12,20 +12,21 @@ function onSubmit(ev) {
     let confirmPwd = form.querySelector('.confirmPwd');
 
     if (form.querySelector('.notConcurrencePwd')) {
+        console.log(form.querySelector('.notConcurrencePwd'));
         let msg = form.querySelector('.notConcurrencePwd');
         msg.remove();
     }
-setTimeout(()=>{if (pwd.value === confirmPwd.value) {
+// setTimeout(()=>{if (pwd.value === confirmPwd.value) {
+//         alert('You are welcome')
+//     } else {
+//         createMessageOfNotConcurrencePwd(confirmPwd.parentElement)
+//     }});
+
+    if (pwd.value === confirmPwd.value) {
         alert('You are welcome')
     } else {
         createMessageOfNotConcurrencePwd(confirmPwd.parentElement)
-    }});
-
-    // if (pwd.value === confirmPwd.value) {
-    //     alert('You are welcome')
-    // } else {
-    //     createMessageOfNotConcurrencePwd(confirmPwd.parentElement)
-    // }
+    }
 }
 
 function createMessageOfNotConcurrencePwd(target) {
