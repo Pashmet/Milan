@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Japan best men exercise</title>
+</head>
+<body>
+<!--  У вас есть массив объектов (женихи из Японии), каждый объект - характеристики потенциального жениха.. Создайте из  них другой массив -  "завидные женихи". Завидным считается парень с ростом  выше 170 см или с зарплатой больше 100 000 долларов в год.
+Использование стрелочных функций приветствуется.
+  -->
+
+<script>
+    const japanMen = [{name: "Акэти Мицихура", height: 180, salary: 20000}, {name: "Санада Юкимура", height: 169, salary: 11000}, {name: "Ода Нобунага", height: 165, salary: 200000}, {name: "Уэсуги Кэнсин", height: 160, salary: 25000}, {name: "Такэда Сингэн", height: 165, salary: 80000}, {name: "Мори Мотонари", height: 185, salary: 75000}, {name: "Датэ Масамунэ", height: 180, salary: 750000}];
+
+    /*В результате у вас должен повится новый массив japanBestMen с такими значениями:
+
+    const japanBestMen = [{name: "Акэти Мицихура", height: 180, salary: 20000}, {name: "Ода Нобунага", height: 165, salary: 200000}, {name: "Мори Мотонари", height: 185, salary: 75000}, {name: "Датэ Масамунэ", height: 180, salary: 750000}];
+    */
+const japanBestMen = japanMen.filter(men => men.height>170&men.salary>100000);
+
+console.log(japanBestMen);
+</script>
+
+</body>
+</html>
